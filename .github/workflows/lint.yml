@@ -22,6 +22,6 @@ jobs:
         run: pnpm install --frozen-lockfile
       - uses: sibiraj-s/action-eslint@v3
         with:
-          eslint-args: --ignore-path=.gitignore --quiet
-          extensions: "js,jsx,ts,tsx,vue"
-          annotations: true
+          all-files: true
+          eslint-args: '--ignore-path=.gitignore --quiet'
+          ignore-path: .eslintignore 
