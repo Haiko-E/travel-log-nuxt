@@ -14,7 +14,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm ci
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9 # of een andere gewenste versie
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
       - uses: sibiraj-s/action-eslint@v3
         with:
           eslint-args: --ignore-path=.gitignore --quiet
