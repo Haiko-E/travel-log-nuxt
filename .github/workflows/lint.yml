@@ -14,9 +14,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: pnpm install
+      - run: npm ci
       - uses: sibiraj-s/action-eslint@v3
         with:
           eslint-args: --ignore-path=.gitignore --quiet
-          extensions: "js,jsx,ts,tsx"
+          extensions: "js,jsx,ts,tsx,vue"
           annotations: true
