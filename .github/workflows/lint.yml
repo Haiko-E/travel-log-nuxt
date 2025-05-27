@@ -17,7 +17,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v3
         with:
-          version: 9 # of een andere gewenste versie
+          version: 9
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - uses: sibiraj-s/action-eslint@v3
