@@ -19,6 +19,6 @@ jobs:
         with:
           version: 9
       - name: Install dependencies
-        run: pnpm install 
+        run: pnpm install
       - name: Run ESLint
         run: pnpm lint
