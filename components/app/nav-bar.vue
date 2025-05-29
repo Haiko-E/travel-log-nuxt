@@ -7,14 +7,7 @@
     </div>
     <div class="navbar-end">
       <AppThemeToggle />
-      <button class="btn btn-accent">
-        Login with github
-        <Icon
-          name="tabler:brand-github"
-          class="ml-1"
-          size="24"
-        />
-      </button>
+      <AuthButton />
     </div>
   </div>
 </template>
